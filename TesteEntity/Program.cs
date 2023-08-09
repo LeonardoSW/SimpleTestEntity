@@ -15,7 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // DbContextConfiguring
-builder.Services.AddDbContextPool<AppDbContext>(options => options.UseNpgsql("Server=127.0.0.1;Port=5432;Database=openManagement;User Id=postgres;Password=Jesusmylife1*;"));
+builder.Services.AddDbContextPool<AppDbContext>(options => options.UseNpgsql("Server=127.0.0.1;Port=5432;Database=openManagement;User Id=postgres;Password=pass;"));
 builder.Services.AddTransient<IProductsRepository, ProductsRepository>();
 builder.Services.AddTransient<IProductsService, ProductsServices>();
 
